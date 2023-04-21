@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+/* Colors: */
+/* 
+  Background primary: #0d1117
+  Background secondary: #161b22
+  Text: #d7d7d7;
+  Name: #8888ff;
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #0d1117;
+  color: #d7d7d7;
+  font-family: "Inter", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.component {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  border-radius: 5px 5px 0 0;
+  background-color: #161b22;
+  margin: 0;
+  padding: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+  color: #8888ff;
+}
+
+.about-text {
+  padding: 20px;
+  line-height: 1.25;
+}
+
+.socials {
+  padding: 20px;
+  padding-top: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-a-tag {
+  color: #d7d7d7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  font-size: 25px;
 }
