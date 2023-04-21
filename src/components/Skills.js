@@ -1,5 +1,4 @@
 // Importing SkillContainer, displays the skill icon and name.
-import SkillsIcon from "./SkillsIcon";
 import { AiFillHtml5 } from "react-icons/ai";
 import { SiJavascript } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
@@ -15,6 +14,7 @@ import { DiReact } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { SiCplusplus } from "react-icons/si";
 
+// Component: Skills section.
 export default function Skills() {
   return (
     <div className="component">
@@ -35,6 +35,16 @@ export default function Skills() {
         <SkillsIcon icon={SiVisualstudiocode} name="VS Code" />
         <SkillsIcon icon={SiVisualstudio} name="Visual Studio" />
       </div>
+    </div>
+  );
+}
+
+// Function: builds the skill icon structure.
+function SkillsIcon({ icon: Icon, name }) {
+  return (
+    <div className="skills-icon">
+      <Icon className="skill-icon" />
+      <p>{name}</p>
     </div>
   );
 }
