@@ -1,3 +1,4 @@
+// Importing socials icons.
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
@@ -16,19 +17,19 @@ export default function About() {
       </p>
       <div className="socials">
         <a href="https://github.com/EnriqueSaracho" className="icon-a-tag">
-          <FaGithub className="icon" />
+          <FaGithub className="social-icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/enrique-saracho-felix/"
           className="icon-a-tag"
         >
-          <FaLinkedin className="icon" />
+          <FaLinkedin className="social-icon" />
         </a>
         <a href="https://github.com/EnriqueSaracho" className="icon-a-tag">
-          <GrMail className="icon" />
+          <GrMail className="social-icon" />
         </a>
         <a href="https://github.com/EnriqueSaracho" className="icon-a-tag">
-          <FaInstagramSquare className="icon" />
+          <FaInstagramSquare className="social-icon" />
         </a>
       </div>
     </div>
