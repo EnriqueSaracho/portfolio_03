@@ -26,7 +26,8 @@ export default function Skills() {
         <SkillsIcon icon={SiBootstrap} name="Bootstrap" />
         <SkillsIcon icon={SiMongodb} name="mongoDB" />
         <SkillsIcon icon={DiReact} name="React" />
-        <SkillsIcon icon={DiNodejsSmall} name="Express" />
+        <SkillsIcon icon={DiNodejsSmall} name="Express.js" />
+        <SkillsIcon icon={DiNodejsSmall} name="Node.js" />
         <SkillsIcon icon={GoDatabase} name="SQL" />
         <SkillsIcon icon={SiPostgresql} name="PostreSQL" />
         <SkillsIcon icon={DiMysql} name="MySQL" />
