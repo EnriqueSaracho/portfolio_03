@@ -22,7 +22,7 @@ export default function Projects() {
 
 function Project({ img, title, desc, skills }) {
   return (
-    <a href="../index.js" className="project">
+    <div className="project">
       <img src={img} alt={title} className="project-img" />
       <h3 className="project-title">{title}</h3>
       <div className="project-text">
@@ -34,6 +34,6 @@ function Project({ img, title, desc, skills }) {
           })}
         </ul>
       </div>
-    </a>
+    </div>
   );
 }
