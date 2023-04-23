@@ -1,5 +1,5 @@
-// Importing SkillsIcon component.
-import SkillsIcon from "./SkillsIcon";
+// Importing Project component.
+import { ProjectThumbnail as Project } from "./Project";
 
 // Component: Projects section
 export default function Projects() {
@@ -19,25 +19,6 @@ export default function Projects() {
           desc="MERN Stack application coming soon!"
           skills={["mongoDB", "Express.js", "React", "Node.js"]}
         />
-      </div>
-    </div>
-  );
-}
-
-function Project({ img, title, desc, skills }) {
-  return (
-    <div className="project">
-      <img src={img} alt={title} className="project-img" />
-      <h3 className="project-title">{title}</h3>
-      <div className="project-text">
-        <p className="project-description">
-          {desc} <b>See more...</b>
-        </p>
-        <div className="project-skills">
-          {skills.map((skill) => {
-            return <SkillsIcon name={skill} />;
-          })}
-        </div>
       </div>
     </div>
   );
