@@ -1,3 +1,7 @@
+// Importing SkillsIcon component.
+import SkillsIcon from "./SkillsIcon";
+
+// Component: Projects section
 export default function Projects() {
   return (
     <div className="component container2">
@@ -6,44 +10,14 @@ export default function Projects() {
         <Project
           img={require("../images/checkers.jpg")}
           title="Checkers Pizza"
-          desc="For my Web Development I course project, I created a website for a fictional pizza place called ‘Checkers’. It has four pages, a home page with cool images and posts, a menu page with all imaginary items available, a cart page and an account page. I got to use my skills learned throughout the course, including HTML tables, forms, lists, CSS styles, layouts, responsiveness, and JavaScript functionality."
+          desc="Web Development I course project. It's a website for a fictional pizza place called Checkers!"
           skills={["HTML", "CSS", "JavaScript"]}
         />
         <Project
           img={require("../images/comming-soon.jpg")}
           title="Game List"
           desc="MERN Stack application coming soon!"
-          skills={["mongodb", "Express.js", "React", "Node.js"]}
-        />
-        <Project
-          img={require("../images/comming-soon.jpg")}
-          title="Game List"
-          desc="MERN Stack application coming soon!"
-          skills={["mongodb", "Express.js", "React", "Node.js"]}
-        />
-        <Project
-          img={require("../images/comming-soon.jpg")}
-          title="Game List"
-          desc="MERN Stack application coming soon!"
-          skills={["mongodb", "Express.js", "React", "Node.js"]}
-        />
-        <Project
-          img={require("../images/comming-soon.jpg")}
-          title="Game List"
-          desc="MERN Stack application coming soon!"
-          skills={["mongodb", "Express.js", "React", "Node.js"]}
-        />
-        <Project
-          img={require("../images/comming-soon.jpg")}
-          title="Game List"
-          desc="MERN Stack application coming soon!"
-          skills={["mongodb", "Express.js", "React", "Node.js"]}
-        />
-        <Project
-          img={require("../images/comming-soon.jpg")}
-          title="Game List"
-          desc="MERN Stack application coming soon!"
-          skills={["mongodb", "Express.js", "React", "Node.js"]}
+          skills={["mongoDB", "Express.js", "React", "Node.js"]}
         />
       </div>
     </div>
@@ -56,13 +30,14 @@ function Project({ img, title, desc, skills }) {
       <img src={img} alt={title} className="project-img" />
       <h3 className="project-title">{title}</h3>
       <div className="project-text">
-        <p className="project-description">{desc}</p>
-        <p>Skills used:</p>
-        <ul className="project-skills">
+        <p className="project-description">
+          {desc} <b>See more...</b>
+        </p>
+        <div className="project-skills">
           {skills.map((skill) => {
-            return <li>{skill}</li>;
+            return <SkillsIcon name={skill} />;
           })}
-        </ul>
+        </div>
       </div>
     </div>
   );
