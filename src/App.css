@@ -1,9 +1,10 @@
-/* Colors:
-  Background primary: #0d1117
-  Background secondary: #161b22
-  Text: #d7d7d7;
-  Name: #8888ff;
-*/
+:root {
+  --highlight: #8888ff;
+  --contrast: #d7d7d7;
+  --background1: #0d1117;
+  --background2: #161b22;
+  --border: #808080;
+}
 
 * {
   box-sizing: border-box;
@@ -12,8 +13,8 @@
 }
 
 body {
-  background-color: #0d1117;
-  color: #d7d7d7;
+  background-color: var(--background1);
+  color: var(--contrast);
   font-family: "Inter", sans-serif;
 }
 
@@ -33,23 +34,22 @@ body {
   text-align: center;
   padding: 10px;
   width: 200px;
-  color: #0d1117;
-  border: 1px solid gray;
+  color: var(--contrast);
+  border: 1px solid var(--border);
   border-radius: 5px;
   transition: all 0.1s ease-in-out;
-  background-color: #8888ff;
+  background-color: var(--background2);
   text-decoration: none;
 }
-
 .btn:hover {
   cursor: pointer;
-  color: #d7d7d7;
-  background-color: #161b22;
+  color: var(--background1);
+  background-color: var(--highlight);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
 }
-
 .btn:active {
-  background-color: #0d1117;
+  background-color: var(--background1);
+  color: var(--contrast);
   transition: none;
   box-shadow: none;
 }
@@ -61,20 +61,20 @@ body {
 }
 
 .component {
-  border: 1px solid gray;
+  border: 1px solid var(--border);
   border-radius: 5px;
   margin: 20px;
 }
 
 .title {
   border-radius: 5px 5px 0 0;
-  background-color: #161b22;
+  background-color: var(--background2);
   padding: 15px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .name {
-  color: #8888ff;
+  color: var(--highlight);
 }
 
 .container1 {
@@ -97,7 +97,7 @@ body {
 }
 
 .icon-a-tag {
-  color: #d7d7d7;
+  color: var(--contrast);
   bottom: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -158,10 +158,10 @@ body {
   width: 300px;
   height: 500px;
   bottom: 0;
-  border: 1px solid gray;
+  border: 1px solid var(--border);
   border-radius: 5px;
   text-decoration: none;
-  color: #d7d7d7;
+  color: var(--contrast);
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease-in-out;
@@ -189,7 +189,7 @@ body {
 .project-title {
   text-align: center;
   margin-bottom: 5px;
-  background-color: #161b22;
+  background-color: var(--background2);
   padding: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -199,7 +199,7 @@ body {
 }
 
 .see-more {
-  color: #8888ff;
+  color: var(--highlight);
 }
 
 .project-skills {
@@ -214,7 +214,7 @@ body {
 }
 
 .project-page {
-  border: 1px solid gray;
+  border: 1px solid var(--border);
   border-radius: 5px;
   margin: auto;
   display: flex;
@@ -229,7 +229,7 @@ body {
 .project-info-title {
   text-align: center;
   margin-bottom: 5px;
-  background-color: #161b22;
+  background-color: var(--background2);
   padding: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px 0 0 0;
