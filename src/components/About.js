@@ -2,7 +2,6 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import { FaInstagramSquare } from "react-icons/fa";
 
 // Component: About section.
 export default function About() {
@@ -16,20 +15,24 @@ export default function About() {
         watching basketball, and flan.
       </p>
       <div className="socials">
-        <a href="https://github.com/EnriqueSaracho" className="icon-a-tag">
+        <a
+          href="https://github.com/EnriqueSaracho"
+          className="icon-a-tag"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub className="social-icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/enrique-saracho-felix/"
           className="icon-a-tag"
+          target="_blank"
+          rel="noreferrer"
         >
           <FaLinkedin className="social-icon" />
         </a>
-        <a href="https://github.com/EnriqueSaracho" className="icon-a-tag">
+        <a href="mailto:esarachof97@gmail.com" className="icon-a-tag">
           <GrMail className="social-icon" />
-        </a>
-        <a href="https://github.com/EnriqueSaracho" className="icon-a-tag">
-          <FaInstagramSquare className="social-icon" />
         </a>
       </div>
     </div>
