@@ -12,6 +12,14 @@ export default function Projects() {
           title="Checkers Pizza"
           desc="Web Development I course project. It's a website for a fictional pizza place called Checkers!"
           skills={["HTML", "CSS", "JavaScript"]}
+          path="/checkers"
+        />
+        <Project
+          img={require("../images/portfolio.jpg")}
+          title="Portfolio Website"
+          desc="This Portfolio! Simple and flexible with project pages and links."
+          skills={["HTML", "CSS", "JavaScript", "React"]}
+          path="/portfolio"
         />
         <Project
           img={require("../images/comming-soon.jpg")}

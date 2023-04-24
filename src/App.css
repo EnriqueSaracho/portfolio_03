@@ -2,7 +2,7 @@
   --highlight: #8888ff;
   --contrast: #d7d7d7;
   --background1: #0d1117;
-  --background2: #161b22;
+  --background2: #1d242d;
   --border: #808080;
 }
 
@@ -240,7 +240,7 @@ body {
 
 .project-info-text {
   padding: 16px;
-  text-align: justify;
+  /* text-align: justify; */
   line-height: 1.3em;
 }
 

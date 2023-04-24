@@ -5,21 +5,21 @@ import { useNavigate } from "react-router-dom";
 import SkillsIcon from "./SkillsIcon";
 
 // Component: project component for projects section in home page.
-function ProjectThumbnail({ img, title, desc, skills }) {
+function ProjectThumbnail({ img, title, desc, skills, path }) {
   const navigate = useNavigate();
 
   return (
     <div
       className="project"
       onClick={() => {
-        navigate("/checkers");
+        navigate(path);
       }}
     >
       <img src={img} alt={title} className="project-img" />
       <h3 className="project-title">{title}</h3>
       <div className="project-text">
         <p className="project-description">
-          {desc} <b className="see-more">See more...</b>
+          {desc} {path ? <b className="see-more">See more...</b> : null}
         </p>
         <div className="project-skills">
           {skills.map((skill) => {
@@ -65,11 +65,21 @@ function ProjectPage({
             </div>
           </div>
           <div className="project-info-btns">
-            <a href={btn1} className="btn project-page-btn">
+            <a
+              href={btn1}
+              className="btn project-page-btn"
+              target="_blank"
+              rel="noreferrer"
+            >
               {btn1Text}
             </a>
             {btn2 ? (
-              <a href={btn2} className="btn project-page-btn">
+              <a
+                href={btn2}
+                className="btn project-page-btn"
+                target="_blank"
+                rel="noreferrer"
+              >
                 {btn2Text}
               </a>
             ) : null}
