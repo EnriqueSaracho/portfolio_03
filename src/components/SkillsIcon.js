@@ -13,6 +13,7 @@ import { SiMongodb } from "react-icons/si";
 import { DiReact } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { SiCplusplus } from "react-icons/si";
+import { BsUnity } from "react-icons/bs";
 
 // export default function SkillsIcon({ icon: Icon, name }) { this are just notes
 // Component: builds the skill icon structure.
@@ -60,6 +61,9 @@ export default function SkillsIcon({ name }) {
       break;
     case "C++":
       Icon = SiCplusplus;
+      break;
+    case "Unity":
+      Icon = BsUnity;
       break;
     default:
       Icon = AiFillHtml5;

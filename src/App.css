@@ -201,6 +201,9 @@ body {
 .see-more {
   color: var(--highlight);
 }
+.see-more:hover {
+  color: var(--contrast);
+}
 
 .project-skills {
   margin-top: 20px;

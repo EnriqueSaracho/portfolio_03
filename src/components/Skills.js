@@ -22,7 +22,7 @@ export default function Skills() {
         <SkillsIcon name="PHP" />
         <SkillsIcon name="VS Code" />
         <SkillsIcon name="Visual Studio" />
-        <SkillsIcon name="HTML" />
+        <SkillsIcon name="Unity" />
       </div>
     </div>
   );

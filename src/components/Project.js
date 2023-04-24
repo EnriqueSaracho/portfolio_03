@@ -32,7 +32,16 @@ function ProjectThumbnail({ img, title, desc, skills }) {
 }
 
 // Component: Project component for project page.
-function ProjectPage({ img, title, desc, skills }) {
+function ProjectPage({
+  img,
+  title,
+  desc,
+  btn1,
+  btn1Text,
+  btn2,
+  btn2Text,
+  skills,
+}) {
   const navigate = useNavigate();
   return (
     <div>
@@ -56,12 +65,14 @@ function ProjectPage({ img, title, desc, skills }) {
             </div>
           </div>
           <div className="project-info-btns">
-            <a href="#" className="btn project-page-btn">
-              See Project
+            <a href={btn1} className="btn project-page-btn">
+              {btn1Text}
             </a>
-            <a href="#" className="btn project-page-btn">
-              See Code
-            </a>
+            {btn2 ? (
+              <a href={btn2} className="btn project-page-btn">
+                {btn2Text}
+              </a>
+            ) : null}
           </div>
         </div>
         <img src={img} alt={title} className="project-page-img" />
