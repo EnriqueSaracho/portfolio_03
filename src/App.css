@@ -275,7 +275,7 @@ body {
   }
 
   .project-page {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 700px;
     height: fit-content;
   }
