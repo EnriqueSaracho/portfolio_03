@@ -22,10 +22,11 @@ export default function Projects() {
           path="/portfolio"
         />
         <Project
-          img={require("../images/comming-soon.jpg")}
+          img={require("../images/game-list.jpg")}
           title="Game List"
           desc="MERN Stack application coming soon!"
           skills={["mongoDB", "Express.js", "React", "Node.js"]}
+          path="/game-list"
         />
       </div>
     </div>
