@@ -24,7 +24,7 @@ export default function Projects() {
         <Project
           img={require("../images/game-list.jpg")}
           title="Game List"
-          desc="MERN Stack application coming soon!"
+          desc="A MERN Stack application that lists games and has cool features."
           skills={["mongoDB", "Express.js", "React", "Node.js"]}
           path="/game-list"
         />
