@@ -23,6 +23,7 @@ export default function Skills() {
         <SkillsIcon name="VS Code" />
         <SkillsIcon name="Visual Studio" />
         <SkillsIcon name="Unity" />
+        <SkillsIcon name="Java" />
       </div>
     </div>
   );

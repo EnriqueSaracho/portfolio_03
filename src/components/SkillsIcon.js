@@ -14,6 +14,7 @@ import { DiReact } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { SiCplusplus } from "react-icons/si";
 import { BsUnity } from "react-icons/bs";
+import { DiJava } from "react-icons/di";
 
 // Component: builds the skill icon structure.
 export default function SkillsIcon({ name }) {
@@ -63,6 +64,9 @@ export default function SkillsIcon({ name }) {
       break;
     case "Unity":
       Icon = BsUnity;
+      break;
+    case "Java":
+      Icon = DiJava;
       break;
     default:
       Icon = AiFillHtml5;
