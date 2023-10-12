@@ -8,12 +8,9 @@ export default function About() {
   return (
     <div className="component">
       <h2 className="title">
-        Hello there, I'm <span className="name">Enrique</span>.
+        Hi, I'm <span className="name">Kiki</span>.
       </h2>
-      <p className="about-text">
-        I'm a Computer Science student in Vancouver. I like creating apps,
-        watching basketball, and flan.
-      </p>
+      <p className="about-text">Enrique Saracho Felix</p>
       <div className="socials">
         <a
           href="https://github.com/EnriqueSaracho"
