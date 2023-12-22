@@ -2,6 +2,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import { MdLocalPhone } from "react-icons/md";
 
 // Component: About section.
 export default function About() {
@@ -10,13 +11,19 @@ export default function About() {
       <h2 className="title">
         Hi, I'm <span className="name">Kiki</span>.
       </h2>
-      <p className="about-text">Enrique Saracho Felix</p>
+      <p className="about-text">
+        Enrique Saracho Felix <br></br>
+        Vancouver, BC. <br></br>
+        esarachof97@gmail.com <br></br>
+        +1 (236) 863-5617
+      </p>
       <div className="socials">
         <a
           href="https://github.com/EnriqueSaracho"
           className="icon-a-tag"
           target="_blank"
           rel="noreferrer"
+          title="GitHub"
         >
           <FaGithub className="social-icon" />
         </a>
@@ -25,11 +32,19 @@ export default function About() {
           className="icon-a-tag"
           target="_blank"
           rel="noreferrer"
+          title="LinkedIn"
         >
           <FaLinkedin className="social-icon" />
         </a>
-        <a href="mailto:esarachof97@gmail.com" className="icon-a-tag">
+        <a
+          href="mailto:esarachof97@gmail.com"
+          className="icon-a-tag"
+          title="Send mail"
+        >
           <GrMail className="social-icon" />
+        </a>
+        <a href="tel:+1-236-863-5617" className="icon-a-tag" title="Call">
+          <MdLocalPhone className="social-icon" />
         </a>
       </div>
     </div>

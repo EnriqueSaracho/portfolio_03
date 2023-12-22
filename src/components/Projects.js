@@ -8,6 +8,7 @@ export default function Projects() {
       <h2 className="title">Projects</h2>
       <div className="projects">
         <Project
+          tabIndex={0}
           img={require("../images/checkers.jpg")}
           title="Checkers Pizza"
           desc="Web Development I course project. It's a website for a fictional pizza place called Checkers!"

@@ -10,6 +10,7 @@ function ProjectThumbnail({ img, title, desc, skills, path }) {
 
   return (
     <div
+      tabIndex={0}
       className="project"
       onClick={() => {
         navigate(path);

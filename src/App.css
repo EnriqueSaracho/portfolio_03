@@ -1,9 +1,9 @@
 :root {
   --highlight: #8888ff;
-  --contrast: #d7d7d7;
-  --background1: #0d1117;
-  --background2: #1d242d;
-  --border: #808080;
+  --contrast: #5f5f5f;
+  --background1: rgb(246, 246, 232);
+  --background2: #ffffff;
+  --border: #d7d7d7;
 }
 
 * {
@@ -45,7 +45,7 @@ body {
   cursor: pointer;
   color: var(--background1);
   background-color: var(--highlight);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: 4px 4px 4px rgba(220, 220, 220, 0.9);
 }
 .btn:active {
   background-color: var(--background1);
@@ -113,6 +113,8 @@ body {
   font-size: 25px;
 }
 
+/* Curriculum component */
+
 /* Skills component */
 .skills {
   padding: 20px;
@@ -161,6 +163,7 @@ body {
   height: 500px;
   bottom: 0;
   border: 1px solid var(--border);
+  background-color: var(--background2);
   border-radius: 5px;
   text-decoration: none;
   color: var(--contrast);
@@ -172,7 +175,13 @@ body {
 .project:hover {
   position: relative;
   bottom: 5px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: 4px 4px 4px rgba(220, 220, 220, 0.9);
+  cursor: pointer;
+}
+.project:focus {
+  position: relative;
+  bottom: 5px;
+  box-shadow: 4px 4px 4px rgba(220, 220, 220, 0.9);
   cursor: pointer;
 }
 
@@ -191,6 +200,7 @@ body {
 .project-title {
   text-align: center;
   margin-bottom: 5px;
+  border-top: 1px solid var(--border);
   background-color: var(--background2);
   padding: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -229,6 +239,7 @@ body {
 
 .project-info {
   width: 320px;
+  border-right: 1px solid var(--border);
 }
 
 .project-info-title {
