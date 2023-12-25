@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 // Importing SkillsIcon component.
 import SkillsIcon from "./SkillsIcon";
 
+// Importing icons.
+import { BsArrowReturnLeft } from "react-icons/bs";
+
 // Component: project component for projects section in home page.
 function ProjectThumbnail({ img, title, desc, skills, path }) {
   const navigate = useNavigate();
@@ -52,11 +55,12 @@ function ProjectPage({
           navigate("/");
         }}
       >
-        Go Back
+        <BsArrowReturnLeft />
       </button>
       <div className="project-page">
+        <h2 className="project-info-title">{title}</h2>
         <div className="project-info">
-          <h2 className="project-info-title">{title}</h2>
+          <img src={img} alt={title} className="project-page-img" />
           <div className="project-info-text">
             <p>{desc}</p>
             <div className="project-skills">
@@ -64,29 +68,28 @@ function ProjectPage({
                 return <SkillsIcon name={skill} />;
               })}
             </div>
-          </div>
-          <div className="project-info-btns">
-            <a
-              href={btn1}
-              className="btn project-page-btn"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {btn1Text}
-            </a>
-            {btn2 ? (
+            <div className="project-info-btns">
               <a
-                href={btn2}
+                href={btn1}
                 className="btn project-page-btn"
                 target="_blank"
                 rel="noreferrer"
               >
-                {btn2Text}
+                {btn1Text}
               </a>
-            ) : null}
+              {btn2 ? (
+                <a
+                  href={btn2}
+                  className="btn project-page-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {btn2Text}
+                </a>
+              ) : null}
+            </div>
           </div>
         </div>
-        <img src={img} alt={title} className="project-page-img" />
       </div>
       <button
         className="btn go-back"
@@ -94,7 +97,7 @@ function ProjectPage({
           navigate("/");
         }}
       >
-        Go Back
+        <BsArrowReturnLeft />
       </button>
     </div>
   );
