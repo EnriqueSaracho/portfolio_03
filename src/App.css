@@ -1,9 +1,10 @@
 :root {
-  --highlight: #8888ff;
+  --highlight: #113946;
   --contrast: #5f5f5f;
-  --background1: rgb(246, 246, 232);
-  --background2: #ffffff;
-  --border: #d7d7d7;
+  --background1: #ead7bb;
+  --background2: #fff2d8;
+  --border: #666666;
+  --shadow: #bca37f;
 }
 
 * {
@@ -35,8 +36,9 @@ body {
   padding: 10px;
   width: 200px;
   color: var(--contrast);
-  border: 1px solid var(--border);
+  box-shadow: 4px 4px 4px var(--shadow);
   border-radius: 5px;
+  border: none;
   transition: all 0.1s ease-in-out;
   background-color: var(--background2);
   text-decoration: none;
@@ -45,13 +47,26 @@ body {
   cursor: pointer;
   color: var(--background1);
   background-color: var(--highlight);
-  box-shadow: 4px 4px 4px rgba(220, 220, 220, 0.9);
+  box-shadow: 6px 6px 6px var(--shadow);
+  position: relative;
+  bottom: 1px;
+}
+.btn:focus {
+  box-shadow: 6px 6px 6px var(--shadow);
+  border: none;
+  outline: none;
+  color: var(--background1);
+  background-color: var(--highlight);
+  position: relative;
+  bottom: 1px;
 }
 .btn:active {
   background-color: var(--background1);
-  color: var(--contrast);
+  color: var(--background1);
+  background-color: var(--highlight);
   transition: none;
   box-shadow: none;
+  bottom: 0;
 }
 
 /* Home page */
@@ -70,8 +85,8 @@ body {
   border-radius: 5px 5px 0 0;
   background-color: var(--background2);
   padding: 15px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  box-shadow: 0px 2px 4px var(--shadow);
+  text-align: left;
 }
 
 .name {
@@ -92,6 +107,11 @@ body {
   text-align: center;
 }
 
+.cv-btn {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
 .socials {
   padding: 20px;
   display: flex;
@@ -108,12 +128,16 @@ body {
   position: relative;
   bottom: 1px;
 }
+.icon-a-tag:focus {
+  position: relative;
+  bottom: 0px;
+  outline: 2px solid var(--highlight);
+  border-radius: 2px;
+}
 
 .social-icon {
   font-size: 25px;
 }
-
-/* Curriculum component */
 
 /* Skills component */
 .skills {
@@ -159,8 +183,9 @@ body {
 .project {
   margin-top: 20px;
   margin-left: 20px;
+  padding: 15px;
   width: 300px;
-  height: 500px;
+  min-height: 500px;
   bottom: 0;
   border: 1px solid var(--border);
   background-color: var(--background2);
@@ -169,45 +194,44 @@ body {
   color: var(--contrast);
   display: flex;
   flex-direction: column;
+  align-items: center;
   transition: all 0.3s ease-in-out;
 }
 
 .project:hover {
   position: relative;
   bottom: 5px;
-  box-shadow: 4px 4px 4px rgba(220, 220, 220, 0.9);
+  box-shadow: 4px 4px 4px var(--shadow);
   cursor: pointer;
 }
 .project:focus {
   position: relative;
   bottom: 5px;
-  box-shadow: 4px 4px 4px rgba(220, 220, 220, 0.9);
+  box-shadow: 4px 4px 4px var(--shadow);
   cursor: pointer;
+  outline: 2px solid var(--highlight);
 }
 
 .project-img {
-  border-radius: 5px 5px 0 0;
-  width: 100%;
-  min-height: 200px;
-  max-height: 200px;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+  width: 260px;
+  height: 200px;
   object-fit: cover;
 }
 
 .project-text {
   padding: 16px;
+  padding-top: 5px;
 }
 
 .project-title {
   text-align: center;
-  margin-bottom: 5px;
-  border-top: 1px solid var(--border);
-  background-color: var(--background2);
-  padding: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .project-description {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .see-more {
@@ -218,9 +242,9 @@ body {
 }
 
 .project-skills {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Project page */

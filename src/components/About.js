@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
+import { FaDownload } from "react-icons/fa";
 
 // Component: About section.
 export default function About() {
@@ -13,10 +14,18 @@ export default function About() {
       </h2>
       <p className="about-text">
         Enrique Saracho Felix <br></br>
+        Industrial Engineering / Computer Science<br></br>
         Vancouver, BC. <br></br>
         esarachof97@gmail.com <br></br>
         +1 (236) 863-5617
       </p>
+      <a
+        href={require("../files/Enrique_Saracho.pdf")}
+        download="Enrique_Saracho.pdf"
+        className="btn cv-btn"
+      >
+        CV <FaDownload />
+      </a>
       <div className="socials">
         <a
           href="https://github.com/EnriqueSaracho"

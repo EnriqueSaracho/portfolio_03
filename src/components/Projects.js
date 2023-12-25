@@ -8,6 +8,13 @@ export default function Projects() {
       <h2 className="title">Projects</h2>
       <div className="projects">
         <Project
+          img={require("../images/game-list.jpg")}
+          title="Ludi"
+          desc="A game titles catalog with cool features."
+          skills={["mongoDB", "Express.js", "React", "Node.js"]}
+          path="/game-list"
+        />
+        <Project
           tabIndex={0}
           img={require("../images/checkers.jpg")}
           title="Checkers Pizza"
@@ -21,13 +28,6 @@ export default function Projects() {
           desc="This Portfolio! Simple and flexible with project pages and links."
           skills={["HTML", "CSS", "JavaScript", "React"]}
           path="/portfolio"
-        />
-        <Project
-          img={require("../images/game-list.jpg")}
-          title="Game List"
-          desc="A MERN Stack application that lists games and has cool features."
-          skills={["mongoDB", "Express.js", "React", "Node.js"]}
-          path="/game-list"
         />
       </div>
     </div>
