@@ -214,7 +214,7 @@ body {
 .project-img {
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 15px;
-  border: 1px solid var(--border);
+  box-shadow: 0 0 3px var(--shadow);
   width: 260px;
   height: 200px;
   object-fit: cover;
@@ -278,11 +278,57 @@ body {
   padding: 20px;
 }
 
-.project-page-img {
-  border-radius: 5px;
-  border: 1px solid var(--border);
+.project-page-img-container {
   width: 60%;
-  height: max-content;
+  /* border: 1px solid var(--border); */
+}
+
+.project-page-img-slider-wrapper {
+  position: relative;
+}
+
+.project-page-img-slider {
+  display: flex;
+  aspect-ratio: 10/8;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 2px 2px 2px var(--shadow);
+  border-radius: 5px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.project-page-img-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.project-page-img {
+  width: 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.project-page-img-slider-nav {
+  display: flex;
+  column-gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.project-page-img-slider-nav a {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 75%;
+  transition: opacity ease 250ms;
+}
+.project-page-img-slider-nav a:hover {
+  opacity: 1;
 }
 
 .project-info-text {
@@ -294,6 +340,20 @@ body {
   text-align: justify;
   line-height: 1.3em;
 }
+
+.project-info-text-description {
+  overflow-y: auto;
+  max-height: 300px;
+  padding-right: 10px;
+  /* box-shadow: inset 0 4px 4px var(--shadow);
+  border-radius: 5px; */
+
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+}
+/* .project-info-text-description::-webkit-scrollbar {
+  display: none;
+} */
 
 .project-info-text p {
   margin-bottom: 12px;
@@ -329,6 +389,10 @@ body {
 
   .project-info {
     padding: 12px;
+  }
+
+  .project-info-text-description {
+    max-height: 250px;
   }
 }
 
@@ -368,7 +432,7 @@ body {
     flex-direction: column;
     padding: 20px;
   }
-  .project-page-img {
+  .project-page-img-container {
     width: 100%;
   }
   .project-info-text {

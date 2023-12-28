@@ -5,13 +5,18 @@ import { GrMail } from "react-icons/gr";
 import { MdLocalPhone } from "react-icons/md";
 import { FaDownload } from "react-icons/fa";
 
-// Component: About section.
+/**
+ * About component.
+ */
 export default function About() {
   return (
     <div className="component">
+      {/* Title */}
       <h2 className="title">
         Hi, I'm <span className="name">Kiki</span>.
       </h2>
+
+      {/* Info */}
       <p className="about-text">
         Enrique Saracho Felix <br></br>
         Industrial Engineering / Computer Science<br></br>
@@ -19,6 +24,8 @@ export default function About() {
         esarachof97@gmail.com <br></br>
         +1 (236) 863-5617
       </p>
+
+      {/* Curriculum */}
       <a
         href={require("../files/Enrique_Saracho.pdf")}
         download="Enrique_Saracho.pdf"
@@ -26,6 +33,8 @@ export default function About() {
       >
         CV <FaDownload />
       </a>
+
+      {/* Links to social pages */}
       <div className="socials">
         <a
           href="https://github.com/EnriqueSaracho"

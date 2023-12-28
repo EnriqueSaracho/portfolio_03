@@ -1,4 +1,4 @@
-// Importing SkillContainer, displays the skill icon and name.
+// Importing from react-icons.
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
@@ -16,7 +16,12 @@ import { SiCplusplus } from "react-icons/si";
 import { BsUnity } from "react-icons/bs";
 import { DiJava } from "react-icons/di";
 
-// Component: builds the skill icon structure.
+/**
+ * SkillsIcon component.
+ *   Attaches the icon to the corresponding skill.
+ *
+ * @param name - the skill's name (string).
+ */
 export default function SkillsIcon({ name }) {
   let Icon = null;
   switch (name) {

@@ -1,11 +1,16 @@
 // Importing SkillsIcon component.
 import SkillsIcon from "./SkillsIcon";
 
-// Component: Skills section.
+/**
+ * Skills component.
+ */
 export default function Skills() {
   return (
     <div className="component">
+      {/* Title */}
       <h2 className="title">Skills</h2>
+
+      {/* Skills */}
       <div className="skills">
         <SkillsIcon name="C++" />
         <SkillsIcon name="Java" />
