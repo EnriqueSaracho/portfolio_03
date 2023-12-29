@@ -40,6 +40,7 @@ function ProjectThumbnail({ img, title, desc, skills, path }) {
         <p className="project-description">
           {desc} {path ? <b className="see-more">See more...</b> : null}
         </p>
+
         {/* Skills */}
         <div className="project-skills">
           {skills.map((skill) => {
@@ -123,6 +124,9 @@ function ProjectPage({
           <div className="project-info-text">
             {/* Description */}
             <p className="project-info-text-description">{desc}</p>
+            {/* <p className="project-info-text-description">
+              asdfasdfasdf asdfdsf{" "}
+            </p> */}
 
             {/* Skills */}
             <div className="project-skills">

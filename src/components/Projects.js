@@ -15,7 +15,7 @@ export default function Projects() {
         <Project
           img={require("../images/game-list/game-list.jpg")}
           title="Game List"
-          desc="A game titles catalog with cool features."
+          desc={"A video game catalog with cool features."}
           skills={["mongoDB", "Express.js", "React", "Node.js"]}
           path="/game-list"
         />
