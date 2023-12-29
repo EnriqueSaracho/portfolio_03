@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import Checkers from "./pages/checkers";
 import Portfolio from "./pages/portfolio";
 import GameList from "./pages/game-list";
+import Calculator from "./pages/calculator";
 
 /**
  * App page.
@@ -21,6 +22,7 @@ function App() {
           <Route path="/checkers" element={<Checkers />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/game-list" element={<GameList />} />
+          <Route path="/calculator" element={<Calculator />} />
         </Routes>
       </Router>
     </div>

@@ -27,6 +27,13 @@ export default function Projects() {
           path="/checkers"
         />
         <Project
+          img={require("../images/calculator/calculator.jpg")}
+          title="Notebook Calculator"
+          desc="This calculator keeps track of operations and is able to modify them as needed."
+          skills={["HTML", "CSS", "JavaScript"]}
+          path="/calculator"
+        />
+        <Project
           img={require("../images/portfolio/portfolio.jpg")}
           title="Portfolio Website"
           desc="This Portfolio! Simple and flexible with project pages and links."
