@@ -15,6 +15,7 @@ import { DiNodejsSmall } from "react-icons/di";
 import { SiCplusplus } from "react-icons/si";
 import { BsUnity } from "react-icons/bs";
 import { DiJava } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
 
 /**
  * SkillsIcon component.
@@ -72,6 +73,9 @@ export default function SkillsIcon({ name }) {
       break;
     case "Java":
       Icon = DiJava;
+      break;
+    case "Python":
+      Icon = FaPython;
       break;
     default:
       Icon = AiFillHtml5;
