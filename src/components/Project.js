@@ -13,11 +13,12 @@ import { BsArrowReturnLeft } from "react-icons/bs";
  *
  * @param img - path to project's thumbnail image (string).
  * @param title - project's title (string).
+ * @param field - project's field (string).
  * @param desc - project's description (string).
  * @param skills - skills used for project's creation (array of strings).
  * @param path - react-router path to project's page (string).
  */
-function ProjectThumbnail({ img, title, desc, skills, path }) {
+function ProjectThumbnail({ img, title, field, desc, skills, path }) {
   const navigate = useNavigate();
 
   return (
@@ -40,6 +41,9 @@ function ProjectThumbnail({ img, title, desc, skills, path }) {
         <p className="project-description">
           {desc} {path ? <b className="see-more">See more...</b> : null}
         </p>
+
+        {/* Field */}
+        <h4 className="project-field">{field}</h4>
 
         {/* Skills */}
         <div className="project-skills">
