@@ -20,6 +20,7 @@ export default function Checkers() {
         btn1Text={"See Web page"}
         btn2={"https://github.com/EnriqueSaracho/checkers"}
         btn2Text={"See Code"}
+        field="Front-End Web development"
         skills={["HTML", "CSS", "JavaScript"]}
       />
     </div>

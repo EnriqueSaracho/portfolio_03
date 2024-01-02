@@ -21,6 +21,7 @@ export default function Calculator() {
         btn1Text={"See App"}
         btn2={"https://github.com/EnriqueSaracho/calculator"}
         btn2Text={"See Code"}
+        field="Front-End Web development"
         skills={["HTML", "CSS", "JavaScript"]}
       />
     </div>

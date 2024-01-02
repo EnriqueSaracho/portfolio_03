@@ -355,6 +355,7 @@ body {
   max-height: 300px;
   padding-right: 10px;
   white-space: pre-line;
+  margin-bottom: 20px;
 }
 .project-info-text-description::-webkit-scrollbar {
   width: 8px;
@@ -367,9 +368,9 @@ body {
   border-radius: 4px;
 }
 
-.project-info-text p {
+/* .project-info-text p {
   margin-bottom: 12px;
-}
+} */
 
 .project-info-btns {
   display: flex;

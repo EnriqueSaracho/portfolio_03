@@ -27,6 +27,7 @@ export default function GameList() {
         `}
         btn1={"https://github.com/EnriqueSaracho/game-list"}
         btn1Text={"See Code"}
+        field="Full-Stack Web development"
         skills={["mongoDB", "Express.js", "React", "Node.js"]}
       />
     </div>

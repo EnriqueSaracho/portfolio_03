@@ -78,6 +78,7 @@ function ProjectPage({
   btn1Text,
   btn2,
   btn2Text,
+  field,
   skills,
 }) {
   const navigate = useNavigate();
@@ -131,6 +132,9 @@ function ProjectPage({
             {/* <p className="project-info-text-description">
               asdfasdfasdf asdfdsf{" "}
             </p> */}
+
+            {/* Field */}
+            <h4 className="project-field">{field}</h4>
 
             {/* Skills */}
             <div className="project-skills">
