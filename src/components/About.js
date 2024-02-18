@@ -21,7 +21,7 @@ export default function About() {
         Enrique Saracho Felix <br></br>
         Industrial Engineering / Computer Science<br></br>
         Vancouver, BC. <br></br>
-        esarachof97@gmail.com <br></br>
+        enriquesarachofelix@gmail.com <br></br>
         +1 (236) 863-5617
       </p>
 
@@ -55,7 +55,7 @@ export default function About() {
           <FaLinkedin className="social-icon" />
         </a>
         <a
-          href="mailto:esarachof97@gmail.com"
+          href="mailto:enriquesarachofelix@gmail.com"
           className="icon-a-tag"
           title="Send mail"
         >
